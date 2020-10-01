@@ -1,8 +1,6 @@
-####################################################
-# Modified by Nazmi Asri                           #
-# Original code: http://thecodacus.com/            #
-# All right reserved to the respective owner       #
-####################################################
+##########################################################
+   # modified by yagyesh 
+###############################################################
 
 # Import OpenCV2 for image processing
 import cv2
@@ -26,7 +24,12 @@ assure_path_exists("trainer/")
 recognizer.read('trainer/trainer.yml')
 
 # Load prebuilt model for Frontal Face
-cascadePath = "haarcascade_frontalface_default.xml"
+#cascadePath = "haarcascade_frontalface_default.xml"
+#################################################################
+#  change it for better recognition
+
+cascadePath = "haarcascade_frontalface_alt2.xml"
+########################################################
 
 # Create classifier from prebuilt model
 faceCascade = cv2.CascadeClassifier(cascadePath);
